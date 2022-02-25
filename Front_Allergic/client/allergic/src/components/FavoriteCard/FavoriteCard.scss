@@ -1,0 +1,47 @@
+.favorite-card{
+    border-bottom: 1px solid #a8a8a8;
+    padding: 3vh 0 3vh 0;
+    display:flex;
+    justify-content: flex-start;
+
+
+    &--image{
+        width:100px;
+        height:100px;
+        margin:0 5px 0 0;
+        border: 1px solid #a8a8a8;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+
+        img{
+            max-width:90%;
+            max-height:90%;
+        }
+    }
+
+    &--product{
+        max-width: 60%;
+        h4{
+            font-size: 0.9rem;
+            margin: 0 0 0.4rem 0;
+        }
+
+        p{
+            font-size: 0.7rem;
+            color:#a8a8a8;
+            span{
+                font-weight: bold;
+                color:black;
+            }
+        }
+    }
+
+    &--delete{
+        img{
+            width:30px;
+        }
+        
+
+    }
+}

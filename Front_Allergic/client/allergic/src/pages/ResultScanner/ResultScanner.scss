@@ -1,0 +1,197 @@
+.resultscanner--container {
+    &--page {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin: 3vh 4vw 1vh 4vw;
+  
+      a{
+        display:flex;
+        align-items:center;
+        color:#26c7dc;
+        font-weight:600;
+        font-size:0.7rem;
+        margin-bottom:1vh;
+
+      }
+      img {
+        width: 4.5vw;
+    }
+
+    
+        
+    
+      
+    }
+
+    &--main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        margin: 3vh 4vw 1vh 4vw;
+        h2{
+            width:60%;
+            text-align: center;
+            font-size:1.2rem;
+            
+        }
+
+        p{
+            margin:4vh 0 5vh 0;
+            font-size:0.9rem;
+            text-align: center;
+
+            span{
+                font-weight: bold;
+            }
+        }
+
+        &--description{
+            display:flex;
+            flex-direction: column;
+            justify-content:center;
+            align-items:center;
+          
+
+            
+
+            &--image{
+                position:relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width:170px;
+                height:170px;
+                
+
+                img{
+                    max-width:80%;
+                    max-height:80%;
+                }
+
+                &--save{
+                    position:absolute;
+                    display:flex;
+                    flex-direction: column;
+                    align-items: flex-end;
+                    right: -80px;
+
+                    button{
+                        border:none;
+                        background:none;
+
+                        img{
+                            width:60px;
+                        }
+                    }
+                }
+
+
+            }
+
+            h3{
+                margin:3vh 0 0 0;
+                font-size:1.1rem;
+            }
+        }
+
+        &--button{
+            width:88%;
+            margin:2vh 0 2vh 0;
+            height:40px;
+            background-color: #26C7DC;
+            border-radius: 10px;
+            border:none;
+            color: whitesmoke;
+            font-weight: bold;
+            font-size:17px;
+
+            &:active{
+                transform: translateY(-1px);
+                box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+            }
+
+            &::after{
+                content: "";
+                display: inline-block;
+                height: 100%;
+                width: 100%;
+                border-radius: 100px;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: -1;
+                transition: all .4s;
+            }
+        }
+    }
+}
+
+.green{
+    border: 8px solid #83d8ad;
+    border-radius:10px;
+
+    &--sign{
+        position:absolute;    //Este absolute se relaciona con el position relative del div de la imagen
+        top:-29px;
+        left:-29px;
+        background-color: #83d8ad;
+        border-radius: 50%;
+        width:50px;
+        height:50px;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+
+        img{
+            max-width:60%;
+            max-height:60%;
+        }
+    }
+}
+.orange{
+    border: 8px solid #fbd292;
+    border-radius:10px;
+
+    &--sign{
+        position:absolute;      //Este absolute se relaciona con el position relative del div de la imagen
+        left:-29px;
+        background-color: #fbd292;
+        border-radius: 50%;
+        width:50px;
+        height:50px;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+
+        img{
+            max-width:55%;
+            max-height:55%;
+        }
+    }
+}
+
+.red{
+    border: 8px solid #fb92aa;
+    border-radius:10px;
+
+    &--sign{
+        position:absolute;      //Este absolute se relaciona con el position relative del div de la imagen
+        bottom:-29px;
+        left:-29px;
+        background-color: #fb92aa;
+        border-radius: 50%;
+        width:50px;
+        height:50px;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+
+        img{
+            max-width:50%;
+            max-height:50%;
+        }
+    }
+}

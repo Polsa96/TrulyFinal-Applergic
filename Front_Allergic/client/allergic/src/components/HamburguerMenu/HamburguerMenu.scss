@@ -1,0 +1,137 @@
+.navbar {
+    
+    
+  
+    &-container {
+      display: block;
+      position: relative;
+      height: 64px;
+      margin-top:-8px;
+  
+      //Aquí tenemos una checkbox invisible, cuando se clica se inicia el display
+      input {
+          
+        position: absolute;
+        display: block;
+        height: 25px;
+        width: 25px;
+        top: 8px;
+        left: 185px;
+        z-index: 2;
+        opacity: 0;
+  
+        &:checked{
+            margin-left:175px;
+            // transition: margin-left 1s ease-in
+        }
+        &:checked ~ .menu-items {
+          transform: translateX(0);
+        }
+        
+        &:checked ~ .hamburger-lines .line1 {
+          transform: rotate(45deg);
+          margin-top: -1.5px;
+          margin-left:175px;
+          background-color: grey;
+        }
+        
+        &:checked ~ .hamburger-lines .line2 {
+          transform: scaleY(0);
+        }
+        
+        &:checked ~ .hamburger-lines .line3 {
+          transform: rotate(-45deg);
+          margin-top: 1.5px;
+          margin-left:175px;
+          background-color: grey;
+        }
+      }
+  
+      .hamburger-lines {
+        display: block;
+        height: 15px;
+        width: 20px;
+        position: absolute;
+        top:13px;
+        left: 185px;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+  
+        .line {
+          display: block;
+          height: 3px;
+          width: 100%;
+          border-radius: 10px;
+          background-color: #61dafb
+        }
+  
+        .line1 {
+          transform-origin: 0% 0%;
+          transition: transform 1s ease-in;
+        }
+  
+        .line2 {
+          transition: transform 0.2s ease-in-out;
+        }
+  
+        .line3 {
+          transform-origin: 0% 100%;
+          transition: transform 1s ease-in;
+        }
+      }
+    }
+  
+    .menu-items{
+      padding-top: 60px;
+      background: #fff;
+      height: 45vh;
+      max-width: 300px;
+      transform: translate(-150%);
+      display: flex;
+      flex-direction: column;
+      margin-left: 20px;
+      padding-left: 180px;
+      padding-right: 60px;
+      transition: transform 0.8s ease-in-out;
+      box-shadow: 5px 0px 10px 0px #aaa;
+  
+      &--li{
+          display:flex;
+          margin-bottom: 0.8rem;
+          font-size: 1.2rem;
+          font-weight: 500;
+          list-style: none;
+          width: 100%;
+          align-items: center;
+
+          a{
+              color:black;
+              text-decoration:none;
+              font-weight: 300;
+          }
+
+          p{
+            color:black;
+              text-decoration:none;
+              font-weight: 300;
+          }
+
+          &--img1{
+              width: 30px;
+              margin-right: 16px;
+          }
+
+          &--img{
+              width: 45px;
+              margin: -7.5px 8px -7.5px -7.5px ;
+          }
+
+
+
+      }
+    }
+  
+  
+  }

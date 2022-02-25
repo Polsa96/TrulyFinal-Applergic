@@ -1,0 +1,74 @@
+.scanner-container{
+
+    
+    display:flex;
+    flex-direction: column;
+
+    &-btn{
+        
+        display:flex;
+        justify-content:space-evenly;
+
+        &--code{
+            
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+            justify-content: center;
+            margin-top: 30px;
+
+            p{
+                width: 18vw;
+                font-size: 0.8rem;
+                text-align: center;
+                font-weight: 100px;
+            }
+
+
+            &--blue{
+                border:none;
+                border-radius: 50%;
+                background-color:#26C7DC;
+                
+
+                img{
+                    width:45px;
+                    margin: auto;
+                   
+                    
+                    
+                }
+
+            }
+
+            &--grey{
+                border: none;
+                border-radius: 50%;
+                background-color:#D8D8D8;
+               img{
+                   width:45px;
+                   margin:auto;
+                   
+                   
+                   
+                 
+               }
+
+               
+            }
+
+
+
+
+
+
+        }
+
+
+
+
+    }
+
+
+
+}

@@ -1,0 +1,20 @@
+$breakW: 375px;
+$breakH: 1.618 * $breakW;
+
+@mixin landscape {
+  @media (min-width: $breakW) and (orientation: landscape) {
+    @content;
+  }
+}
+
+@mixin nonMobile_Landscape {
+  @media (min-height: $breakW) and (min-width: $breakH) and (orientation: landscape) {
+    @content;
+  }
+}
+
+@mixin nonMobile {
+  @media (min-width: $breakW) and (min-height: $breakH) {
+    @content;
+  }
+}

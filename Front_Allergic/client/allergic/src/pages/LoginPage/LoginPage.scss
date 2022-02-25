@@ -1,0 +1,106 @@
+.login{
+    &--container{
+        width: 100%;
+        img{
+            width: 100%;
+            
+        }
+    }
+    &--container--wellcome{
+        display:flex;
+        flex-direction:column;
+        align-items:flex-start;
+        width:70%;
+        padding:2vh 5vw 0vw 5vw;
+
+        h1{
+            font-weight:800;
+            font-size: 1.3rem;
+            margin-bottom:1.5vh;
+            
+        }
+        p{
+            font-weight:500;
+            line-height: 1.5rem;
+        }
+    }
+    &--container--form{
+        display:flex;
+        flex-direction:column;
+        padding: 3vh 5vw 1vh 5vw;
+        width: 90%;
+
+        &--input{
+            height:30px;
+            margin-bottom:2vh;
+            border:0;
+            border-bottom: solid 1px  #c7c7c7;
+            &::placeholder{
+                color:#c7c7c7;
+            }
+   
+        }
+
+        p{
+            color:#26c7dc;
+            font-weight:600;
+            font-size:0.7rem;
+            margin-bottom:1vh
+        }
+
+        &--button{
+            margin:2vh 0 2vh 0;
+            height:40px;
+            background-color: #26C7DC;
+            border-radius: 10px;
+            border:none;
+            color: whitesmoke;
+            font-weight: bold;
+            font-size:17px;
+
+
+            &:active{
+                transform: translateY(-1px);
+                box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+            }
+
+            &::after{
+                content: "";
+                display: inline-block;
+                height: 100%;
+                width: 100%;
+                border-radius: 100px;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: -1;
+                transition: all .4s;
+            }
+         
+        }
+
+            
+    }
+    &--container--redirect{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        h3{
+            font-size:0.9rem;
+            color:#c7c7c7;
+            font-weight:300;
+
+        }
+        a{
+            text-decoration:none;
+            color:#26C7DC;
+            font-weight:700;
+            margin:1vh 0 3vh 0;
+        }
+        p{
+            font-size:0.7rem;
+            font-weight:500;
+            color:#26C7DC;
+        }
+    }
+}

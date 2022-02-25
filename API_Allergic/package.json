@@ -1,0 +1,32 @@
+{
+  "name": "allergic-app",
+  "version": "1.0.0",
+  "description": "Node API Auth JWT & Cloudinary",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "allergic-seed": "node server/src/utils/seeds/allergic.seed.js",
+    "food-seed": "node server/src/utils/seeds/food.seed.js"
+  },
+  "author": "Pol, Alba, Ricardo, Samuel, Gregory",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "cloudinary": "^1.28.1",
+    "cors": "^2.8.5",
+    "dotenv": "^11.0.0",
+    "express": "^4.17.2",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.1.6",
+    "multer": "^1.4.4",
+    "multer-storage-cloudinary": "^4.0.0",
+    "quagga": "^0.12.1",
+    "react-qr-scanner": "^1.0.0-alpha.8",
+    "react-router-dom": "^6.2.1",
+    "sass": "^1.49.7"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}

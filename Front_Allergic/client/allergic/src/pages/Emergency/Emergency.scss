@@ -1,0 +1,111 @@
+@import "../../styles/responsive";
+
+.Sos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+    h1 {
+      text-align: center;
+    }
+
+    &__main {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      width: 100%;
+      max-width: $breakH;
+      @include landscape {
+        flex-direction: row;
+      }
+      @include nonMobile {
+        flex-direction: column;
+
+        &__spaceDiv {
+          width: 90%;
+          height: 100%;
+          padding: 0.5rem;
+          font-size: 15px;
+          border-radius: 1rem;
+          background: rgba(66, 207, 226, 0.329);
+          border-radius: 16px;
+          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+          backdrop-filter: blur(0px);
+          -webkit-backdrop-filter: blur(0px);
+          span {
+            margin-right: 16px;
+            color: #000000;
+          }
+          p {
+            display: flex;
+            flex-wrap: wrap;
+            text-transform: uppercase;
+            font-size: 13px;
+            font-weight: bold;
+            justify-content:left;
+            
+          }
+        }
+
+        &__buttons {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          width: 90%;
+          @include landscape {
+            height: 60%;
+            padding-left: 20px;
+          }
+          @include nonMobile {
+            height: auto;
+            padding: 0;
+          }
+
+          &__btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 40px;
+            width: 100%;
+            margin-top: 16px;
+            border: none;
+            border-radius: 12px;
+            text-align: center;
+            font-weight: bold;
+            color: white;
+            background-color: #26c7dc;
+
+            
+          }
+
+          
+        }
+      }
+    }
+  }
+
+  
+
+ 
+
+  &__btn--pink {
+    background-color: #f57b97;
+    font-size: 1rem;
+  }
+
+  
+
+  
+}
